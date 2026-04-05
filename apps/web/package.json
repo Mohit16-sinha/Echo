@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --port 3001",
+    "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^6.37.3",
+    "@sentry/nextjs": "10",
     "@workspace/backend": "workspace:*",
     "@workspace/math": "workspace:*",
     "@workspace/ui": "workspace:*",
@@ -21,7 +22,8 @@
     "next": "16.0.10",
     "next-themes": "^0.4.6",
     "react": "^19.2.1",
-    "react-dom": "^19.2.1"
+    "react-dom": "^19.2.1",
+    "require-in-the-middle": "^8.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
